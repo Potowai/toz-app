@@ -4,6 +4,7 @@ const $=s=>document.querySelector(s);
 const h=(t,p={},c=[])=>{const e=document.createElement(t);for(const k in p){if(k==='class')e.className=p[k];else if(k==='html')e.innerHTML=p[k];else e.setAttribute(k,p[k])}c.forEach(x=>e.appendChild(typeof x==='string'?document.createTextNode(x):x));return e};
 const shuffle=a=>{const x=a.slice();for(let i=x.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]]}return x};
 const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1600)};
+
 const QUESTIONS=[
 "Je n’ai jamais embrassé quelqu’un dans un ascenseur",
 "Je n’ai jamais passé la nuit entière sans dormir pour des raisons coquines",
