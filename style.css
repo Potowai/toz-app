@@ -1,3 +1,12 @@
+@media (max-width: 480px), (orientation: portrait) {
+    .qcard {
+        max-width: 96vw;
+        width: 96vw;
+        box-sizing: border-box;
+        font-size: 0.98em;
+        padding: 10px;
+    }
+}
 /* Mobile-first portrait styles */
 @media (max-width: 480px), (orientation: portrait) {
     html, body {
