@@ -1,3 +1,57 @@
+/* Mobile-first portrait styles */
+@media (max-width: 480px), (orientation: portrait) {
+    html, body {
+        font-size: 17px;
+        padding: 0;
+        margin: 0;
+        min-width: 100vw;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+    .header-inner {
+        flex-direction: column;
+        gap: 6px;
+        padding: 8px;
+    }
+    .logo {
+        width: 28px;
+        height: 28px;
+    }
+    .title {
+        font-size: 1.1em;
+        text-align: center;
+    }
+    .content {
+        padding: 8px;
+    }
+    .card, .hero, .qcard {
+        padding: 12px;
+        border-radius: 16px;
+        font-size: 1em;
+    }
+    .qcard {
+        min-height: 40vh;
+        font-size: 1em;
+    }
+    .primary, .ghost, .solid {
+        min-width: 44px;
+        min-height: 44px;
+        padding: 10px 12px;
+        font-size: 1em;
+        border-radius: 12px;
+    }
+    .nav {
+        gap: 4px;
+    }
+    .badge {
+        font-size: 0.95em;
+        padding: 6px 8px;
+    }
+    .footer {
+        font-size: 0.95em;
+        padding: 8px;
+    }
+}
 /* Styles extraits du fichier HTML */
 :root {
     --bg: #0b0b14;
