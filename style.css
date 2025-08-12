@@ -1,4 +1,31 @@
 @media (max-width: 480px), (orientation: portrait) {
+    .primary, .ghost, .solid {
+        min-width: 36px;
+        min-height: 36px;
+        padding: 8px 8px;
+        font-size: 1em;
+        border-radius: 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav button {
+        padding: 6px;
+        min-width: 36px;
+        min-height: 36px;
+        font-size: 1em;
+        border-radius: 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav button span.icon {
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+    }
+}
+@media (max-width: 480px), (orientation: portrait) {
     html {
         width: 100vw;
         min-width: 100vw;
@@ -218,7 +245,6 @@ button {
     color: #fff;
     box-shadow: 0 0 0 4px rgba(46,197,255,0.18);
     opacity: 0.95;
-}
 }
 
 .primary:active {
