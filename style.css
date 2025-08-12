@@ -114,22 +114,33 @@ button {
 
 .primary,
 .ghost {
-    min-width: 44px;
-    min-height: 44px;
-    padding: 12px 18px;
-    border-radius: 14px;
-    border: 1px solid rgba(255, 255, 255, .1);
-    background: rgba(255, 255, 255, .06);
-    color: var(--text);
+    min-width: 48px;
+    min-height: 48px;
+    padding: 14px 22px;
+    border-radius: 16px;
+    border: 2px solid #fff;
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 2px 12px rgba(46,197,255,0.18);
     cursor: pointer;
-    transition: transform var(--speed), opacity var(--speed), box-shadow var(--speed)
+    transition: transform var(--speed), opacity var(--speed), box-shadow var(--speed), background 180ms;
 }
 
 .primary {
     background: linear-gradient(135deg, var(--a1), var(--a2));
-    border: 0;
-    color: white;
-    box-shadow: 0 12px 28px rgba(138, 92, 255, .35)
+    border: 2px solid #fff;
+    color: #fff;
+    box-shadow: 0 12px 28px rgba(138, 92, 255, .45)
+}
+
+.primary:hover, .ghost:hover, .solid:hover {
+    background: linear-gradient(135deg, var(--a3), var(--a1));
+    color: #fff;
+    box-shadow: 0 0 0 4px rgba(46,197,255,0.18);
+    opacity: 0.95;
+}
 }
 
 .primary:active {
@@ -212,13 +223,18 @@ button {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    min-width: 56px;
-    min-height: 56px;
-    padding: 12px 18px;
-    border-radius: 18px;
-    border: 1px solid rgba(255, 255, 255, .1);
-    background: rgba(255, 255, 255, .06);
-    cursor: pointer
+    min-width: 60px;
+    min-height: 60px;
+    padding: 16px 24px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background: linear-gradient(135deg, var(--a3), var(--a1));
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 2px 12px rgba(46,197,255,0.18);
+    cursor: pointer;
+    transition: transform var(--speed), opacity var(--speed), box-shadow var(--speed), background 180ms;
 }
 
 .solid[disabled] {
