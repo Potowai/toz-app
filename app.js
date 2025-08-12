@@ -129,4 +129,5 @@ function end(){const v=$('#view');v.innerHTML='';const done=h('div',{class:'grid
 $('#year').textContent=String(new Date().getFullYear());
 renderHome();
 $('#playTop').addEventListener('click',()=>{startGame();window.scrollTo({top:0,behavior:'smooth'})});
+document.querySelector('.logo').addEventListener('click',renderHome);
 })();
