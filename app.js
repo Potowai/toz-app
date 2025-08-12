@@ -118,15 +118,14 @@ let startX=null;card.addEventListener('touchstart',e=>{startX=e.changedTouches[0
 const bar=h('div',{class:'progress'},[h('div',{style:`width:${progress}%`})]);
 const nav=h('div',{class:'nav'},[
  h('button',{class:'solid',id:'prev','aria-label':'Précédent'},['← Précédent']),
- h('button',{class:'solid',id:'restart','aria-label':'Rejouer'},['Rejouer']),
  h('button',{class:'solid',id:'next','aria-label':'Suivant'},['Suivant →'])
 ]);
 wrap.append(card,bar,nav);v.append(wrap);
-$('#prev').addEventListener('click',prev);$('#next').addEventListener('click',next);$('#restart').addEventListener('click',()=>{startGame();toast('Nouveau tirage')});
+$('#prev').addEventListener('click',prev);$('#next').addEventListener('click',next);
 function prev(){if(index>0){index--;renderGame()}else toast('Début du paquet')}
 function next(){if(index<deck.length-1){index++;renderGame()}else end()}
 }
-function end(){const v=$('#view');v.innerHTML='';const done=h('div',{class:'grid'},[]);done.append(h('div',{class:'card hero'},[h('h2',{},['Fin du tirage']),h('p',{},['Tu as parcouru 50 cartes.']),h('div',{},[h('button',{class:'primary',id:'again'},['Rejouer'])]) ]));v.append(done);$('#again').addEventListener('click',startGame)}
+function end(){const v=$('#view');v.innerHTML='';const done=h('div',{class:'grid'},[]);done.append(h('div',{class:'card hero'},[h('h2',{},['Fin du tirage']),h('p',{},['Tu as parcouru 50 cartes.']) ]));v.append(done);}
 $('#year').textContent=String(new Date().getFullYear());
 renderHome();
 $('#playTop').addEventListener('click',()=>{startGame();window.scrollTo({top:0,behavior:'smooth'})});
