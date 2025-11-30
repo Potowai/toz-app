@@ -7,9 +7,11 @@ export default defineConfig({
     server: {
         host: true,
         port: process.env.PORT ? parseInt(process.env.PORT) : 5173,
+        allowedHosts: ['toz.alexis.games']
     },
     preview: {
         host: true,
         port: process.env.PORT ? parseInt(process.env.PORT) : 4173,
+        allowedHosts: ['toz.alexis.games']
     }
 })
