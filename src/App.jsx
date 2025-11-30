@@ -15,7 +15,7 @@ function App() {
             <header className="header">
                 <div className="header-inner">
                     <div className="logo" aria-hidden="true" onClick={() => setActiveTab('never')}></div>
-                    <div className="title cursor-pointer">toz — Je n’ai jamais</div>
+                    <div className="title cursor-pointer">toz</div>
                 </div>
             </header>
 
