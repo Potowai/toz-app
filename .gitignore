@@ -1,0 +1,22 @@
+# Dependencies
+node_modules
+
+# Build
+build
+
+# Vite
+.vite
+
+# EditorConfig
+.editorconfig
+
+# IDE
+.idea
+.vscode
+
+# Logs
+logs
+
+# Other
+.DS_Store
+Thumbs.db
