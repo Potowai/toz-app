@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { QUESTIONS_WHO } from '../data';
 import { shuffle } from '../utils';
+import { PlusIcon } from 'lucide-react';
 
 export default function WhoGame() {
     const [players, setPlayers] = useState([]);
@@ -74,7 +75,7 @@ export default function WhoGame() {
                             onChange={(e) => setInputValue(e.target.value)}
                             onKeyDown={(e) => e.key === 'Enter' && addPlayer()}
                         />
-                        <button className="nav-btn primary" style={{ flex: 0 }} onClick={addPlayer}>+</button>
+                        <button className="nav-btn primary" style={{ flex: 0 }} onClick={addPlayer}><PlusIcon /></button>
                     </div>
                     <div className="player-list">
                         {players.map((p, i) => (
