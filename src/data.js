@@ -381,7 +381,7 @@ export const QUESTIONS_WHO = [
     { text: "Qui pourrait faire une scène de ménage en public ?", tags: ['honte'], base: 6 },
     { text: "Qui pourrait stalker son ex pendant des années ?", tags: ['honte'], base: 7 },
     { text: "Qui pourrait avoir le fétichisme le plus bizarre ?", tags: ['sexe'], base: 6 }
-,
+    ,
     { text: "Qui pourrait se faire pipi dessus de rire ?", tags: ["honte", "fun"], base: 6 },
     { text: "Qui pourrait vomir dans un Uber ?", tags: ["alcool", "salete", "honte"], base: 8 },
     { text: "Qui pourrait s'endormir en boîte de nuit ?", tags: ["alcool", "fatigue"], base: 5 },
@@ -478,7 +478,7 @@ export const QUESTIONS_WHO = [
     { text: "Qui pourrait ne pas savoir faire cuire des pâtes ?", tags: ["cuisine"], base: 5 },
     { text: "Qui pourrait faire brûler de l'eau ?", tags: ["cuisine", "stupide"], base: 6 },
     { text: "Qui pourrait appeler sa mère pour un rien ?", tags: ["famille"], base: 4 },
-    { text: "Qui pourrait être un "fils à maman" / "fille à papa" ?", tags: ["famille"], base: 5 },
+    { text: "Qui pourrait être un 'fils à maman' / 'fille à papa' ?", tags: ["famille"], base: 5 },
     { text: "Qui pourrait être le chouchou du prof ?", tags: ["ecole"], base: 4 },
     { text: "Qui pourrait tricher à un examen ?", tags: ["ecole", "triche"], base: 6 },
     { text: "Qui pourrait copier sur son voisin ?", tags: ["ecole", "triche"], base: 5 },
